@@ -36,6 +36,11 @@ namespace Examen_II_Juan_Hernandez
                 MessageBox.Show("El Usuario está Inactivo");
                 return;
             }
+
+            //Esto sirve para unir diferentes formularios
+            FrmMenu frmMenu = new FrmMenu();
+            frmMenu.Show();
+            this.Hide();
         }
 
         private void CancelarButton_Click(object sender, EventArgs e)
