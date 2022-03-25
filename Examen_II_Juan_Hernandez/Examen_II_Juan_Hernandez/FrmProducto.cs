@@ -63,7 +63,7 @@ namespace Examen_II_Juan_Hernandez
         {
             try
             {
-                //Condiciones por si el usuario ingresa mal algun dato
+                //Condiciones por si el usuario deja vacio algun textbox
                 if (string.IsNullOrEmpty(CodigoTextBox.Text))
                 {
                     errorProvider1.SetError(CodigoTextBox, "Ingrese el Código");
@@ -123,6 +123,35 @@ namespace Examen_II_Juan_Hernandez
         private void ListarProductos()
         {
             ProductosDataGridView.DataSource = productoDA.ListarProductos();
+        }
+
+        //Este metodo lo que hace es detectar que tecla se preciona al escribir sobre el
+        private void PrecioTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Condición para que no se pueda escribir caracteres ni mas de dos puntos en el textbox
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                //Esto lo que hace es que evitaria que se ingrese el caracter
+                e.Handled = true;
+            }
+            
+            //El IndexOf lo que hace es que cuenta la cantidad en que se ingreso un caracter
+            //Esta condición es para que no se ingrese mas de un punto en el textbox
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        //Este metodo lo que hace es detectar que tecla se preciona al escribir sobre el
+        private void ExistenciaTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Condición para que no se pueda escribir caracteres ni mas de dos puntos en el textbox
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                //Esto lo que hace es que evitaria que se ingrese el caracter
+                e.Handled = true;
+            }
         }
     }
 }

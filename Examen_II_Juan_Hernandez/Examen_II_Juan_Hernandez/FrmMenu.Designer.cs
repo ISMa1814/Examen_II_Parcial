@@ -30,16 +30,16 @@
         {
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
-            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.ProductosToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTabItem2 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+            this.toolStripEx2 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
             this.PedidosToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControlAdv1)).BeginInit();
             this.ribbonControlAdv1.SuspendLayout();
             this.toolStripTabItem1.Panel.SuspendLayout();
-            this.toolStripTabItem2.Panel.SuspendLayout();
             this.toolStripEx1.SuspendLayout();
+            this.toolStripTabItem2.Panel.SuspendLayout();
             this.toolStripEx2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2010;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem2;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem1;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(838, 146);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -93,23 +93,6 @@
             this.toolStripTabItem1.Tag = "1";
             this.toolStripTabItem1.Text = "PRODUCTOS";
             // 
-            // toolStripTabItem2
-            // 
-            this.toolStripTabItem2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripTabItem2.Name = "toolStripTabItem2";
-            // 
-            // ribbonControlAdv1.ribbonPanel2
-            // 
-            this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
-            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
-            this.toolStripTabItem2.Panel.ScrollPosition = 0;
-            this.toolStripTabItem2.Panel.TabIndex = 3;
-            this.toolStripTabItem2.Panel.Text = "PEDIDOS";
-            this.toolStripTabItem2.Position = 1;
-            this.toolStripTabItem2.Size = new System.Drawing.Size(89, 34);
-            this.toolStripTabItem2.Tag = "2";
-            this.toolStripTabItem2.Text = "PEDIDOS";
-            // 
             // toolStripEx1
             // 
             this.toolStripEx1.AutoSize = false;
@@ -128,6 +111,35 @@
             this.toolStripEx1.Size = new System.Drawing.Size(178, 74);
             this.toolStripEx1.TabIndex = 0;
             // 
+            // ProductosToolStripButton
+            // 
+            this.ProductosToolStripButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductosToolStripButton.Image = global::Examen_II_Juan_Hernandez.Properties.Resources.golosinas;
+            this.ProductosToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ProductosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ProductosToolStripButton.Name = "ProductosToolStripButton";
+            this.ProductosToolStripButton.Size = new System.Drawing.Size(124, 55);
+            this.ProductosToolStripButton.Text = "Lista de Productos";
+            this.ProductosToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ProductosToolStripButton.Click += new System.EventHandler(this.ProductosToolStripButton_Click);
+            // 
+            // toolStripTabItem2
+            // 
+            this.toolStripTabItem2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripTabItem2.Name = "toolStripTabItem2";
+            // 
+            // ribbonControlAdv1.ribbonPanel2
+            // 
+            this.toolStripTabItem2.Panel.Controls.Add(this.toolStripEx2);
+            this.toolStripTabItem2.Panel.Name = "ribbonPanel2";
+            this.toolStripTabItem2.Panel.ScrollPosition = 0;
+            this.toolStripTabItem2.Panel.TabIndex = 3;
+            this.toolStripTabItem2.Panel.Text = "PEDIDOS";
+            this.toolStripTabItem2.Position = 1;
+            this.toolStripTabItem2.Size = new System.Drawing.Size(89, 34);
+            this.toolStripTabItem2.Tag = "2";
+            this.toolStripTabItem2.Text = "PEDIDOS";
+            // 
             // toolStripEx2
             // 
             this.toolStripEx2.AutoSize = false;
@@ -145,18 +157,6 @@
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.toolStripEx2.Size = new System.Drawing.Size(177, 74);
             this.toolStripEx2.TabIndex = 0;
-            // 
-            // ProductosToolStripButton
-            // 
-            this.ProductosToolStripButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductosToolStripButton.Image = global::Examen_II_Juan_Hernandez.Properties.Resources.golosinas;
-            this.ProductosToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ProductosToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ProductosToolStripButton.Name = "ProductosToolStripButton";
-            this.ProductosToolStripButton.Size = new System.Drawing.Size(124, 55);
-            this.ProductosToolStripButton.Text = "Lista de Productos";
-            this.ProductosToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.ProductosToolStripButton.Click += new System.EventHandler(this.ProductosToolStripButton_Click);
             // 
             // PedidosToolStripButton
             // 
@@ -184,9 +184,9 @@
             this.ribbonControlAdv1.ResumeLayout(false);
             this.ribbonControlAdv1.PerformLayout();
             this.toolStripTabItem1.Panel.ResumeLayout(false);
-            this.toolStripTabItem2.Panel.ResumeLayout(false);
             this.toolStripEx1.ResumeLayout(false);
             this.toolStripEx1.PerformLayout();
+            this.toolStripTabItem2.Panel.ResumeLayout(false);
             this.toolStripEx2.ResumeLayout(false);
             this.toolStripEx2.PerformLayout();
             this.ResumeLayout(false);
