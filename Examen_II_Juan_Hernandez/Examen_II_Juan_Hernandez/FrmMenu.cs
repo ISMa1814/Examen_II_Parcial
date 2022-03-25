@@ -16,6 +16,7 @@ namespace Examen_II_Juan_Hernandez
         }
 
         FrmProducto frmProducto = null;
+        FrmPedido frmPedido = null;
 
         private void ProductosToolStripButton_Click(object sender, EventArgs e)
         {
@@ -37,10 +38,24 @@ namespace Examen_II_Juan_Hernandez
             frmProducto = null;
         }
 
-        //---------------------------------------------------------------
         private void PedidosToolStripButton_Click(object sender, EventArgs e)
         {
+            if (frmPedido == null)
+            {
+                frmPedido = new FrmPedido();
+                frmPedido.MdiParent = this;
+                frmPedido.FormClosed += FrmPedido_FormClosed; ;
+                frmPedido.Show();
+            }
+            else
+            {
+                frmPedido.Activate();
+            }
+        }
 
+        private void FrmPedido_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmPedido = null;
         }
     }
 }
